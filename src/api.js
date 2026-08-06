@@ -1,7 +1,17 @@
 import axios from 'axios';
 
+const API_BASE_URL = (import.meta.env.VITE_API_URL || '/api').replace(/\/$/, '');
+
+export const getApiAssetUrl = (path) => {
+  if (!path || /^https?:\/\//i.test(path)) return path;
+
+  const apiOrigin = API_BASE_URL.replace(/\/api$/, '');
+  return `${apiOrigin}/${path.replace(/^\//, '')}`;
+};
+
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: API_BASE_URL,
+  timeout: 15000,
 });
 
 // Add token to requests

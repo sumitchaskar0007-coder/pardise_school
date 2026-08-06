@@ -36,32 +36,32 @@ const ClassXI = () => {
     {
       title: "Smart Classrooms",
       text: "Modern classrooms equipped with digital boards for smart and interactive learning.",
-      image: "/images/facilities/classroom.jpg",
+      image: `${import.meta.env.BASE_URL}facilities/Classroom_1.jpg`,
     },
     {
       title: "Science Laboratories",
       text: "Advanced Physics, Chemistry, and Biology labs for hands-on experiments.",
-      image: "/images/facilities/lab.jpg",
+      image: `${import.meta.env.BASE_URL}facilities/laboratory_lab.jpg`,
     },
     {
       title: "Computer Lab",
       text: "High-speed computers with updated software for practical learning.",
-      image: "/images/facilities/computer.jpg",
+      image: `${import.meta.env.BASE_URL}facilities/computer_lab.jpg`,
     },
     {
       title: "Library",
       text: "Well-organized library with reference books, study materials, and digital resources.",
-      image: "/images/facilities/library.jpg",
+      image: `${import.meta.env.BASE_URL}facilities/Library.jpg`,
     },
     {
       title: "Sports & Playground",
       text: "Large playground for physical activities, sports, fitness, and training.",
-      image: "/images/facilities/playground.jpg",
+      image: `${import.meta.env.BASE_URL}facilities/sport.JPG`,
     },
     {
       title: "Transportation",
       text: "Safe, reliable school transport for students across all major routes.",
-      image: "/images/facilities/bus.jpg",
+      image: `${import.meta.env.BASE_URL}facilities/bus.jpeg`,
     },
   ];
 

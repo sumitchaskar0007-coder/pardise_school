@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { careersAPI } from '../api';
-import Navbar from '../components/Navbar'; // import navbar
 
 const Career = () => {
   const [careers, setCareers] = useState([]);
@@ -87,9 +86,6 @@ const Career = () => {
 
   return (
     <>
-      {/* Navbar */}
-      <Navbar />
-
       {/* Add top margin to push content below fixed navbar */}
       <div className="mt-[80px] min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">
         <div className="container mx-auto px-4">

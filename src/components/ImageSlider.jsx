@@ -11,7 +11,7 @@ const ImageSlider = () => {
 
   const slides = [
     {
-      src: `${import.meta.env.BASE_URL}images/slider/modern_tech.jpg`,
+      src: `${import.meta.env.BASE_URL}images/slider/learning.jpeg`,
       title: "Sanskruti Techno School",
       subtitle: "A Future-Ready Learning Ecosystem",
       description:
@@ -19,7 +19,7 @@ const ImageSlider = () => {
       alt: "Sanskruti Techno School Campus",
     },
     {
-      src: `${import.meta.env.BASE_URL}images/slider/robotics.jpg`,
+      src: `${import.meta.env.BASE_URL}images/slider/laboratory.jpeg`,
       title: "Robotics & AI Lab",
       subtitle: "Learn With Innovation",
       description:
@@ -27,7 +27,7 @@ const ImageSlider = () => {
       alt: "Robotics and AI Lab",
     },
     {
-      src: `${import.meta.env.BASE_URL}images/slider/3.jpg`,
+      src: `${import.meta.env.BASE_URL}images/slider/culture.jpeg`,
       title: "Digital Smart Campus",
       subtitle: "Technology Driven Learning",
       description:
@@ -35,7 +35,7 @@ const ImageSlider = () => {
       alt: "Digital Smart Campus",
     },
     {
-      src: `${import.meta.env.BASE_URL}images/slider/sport.jpg`,
+      src: `${import.meta.env.BASE_URL}images/slider/sport.jpeg`,
       title: "Sports & Physical Education",
       subtitle: "Strong Mind, Strong Body",
       description:
@@ -43,7 +43,7 @@ const ImageSlider = () => {
       alt: "Sports Activities",
     },
     {
-      src: `${import.meta.env.BASE_URL}images/slider/2.jpg`,
+      src: `${import.meta.env.BASE_URL}images/slider/campus.jpeg`,
       title: "Cultural & Creative Activities",
       subtitle: "Discover Your Talent",
       description:
@@ -51,7 +51,7 @@ const ImageSlider = () => {
       alt: "Cultural Activities",
     },
     {
-      src: `${import.meta.env.BASE_URL}images/slider/1.jpg`,
+      src: `${import.meta.env.BASE_URL}images/slider/jadhavar_infra.png`,
       title: "Modern Teaching Excellence",
       subtitle: "Experienced & Student-Centered Faculty",
       description:
@@ -59,7 +59,7 @@ const ImageSlider = () => {
       alt: "Modern Teaching Techniques",
     },
     {
-      src: `${import.meta.env.BASE_URL}images/slider/helth1.jpg`,
+      src: `${import.meta.env.BASE_URL}images/slider/yoga.jpg`,
       title: "Safe & Secure Campus",
       subtitle: "A Healthy Environment to Grow",
       description:
