@@ -8,8 +8,9 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
-dist-ssr
+# Keep the production dist bundle in Git so static hosts that publish this
+# directory always receive the HTML together with its hashed JS/CSS assets.
+dist/books/
 *.local
 
 # Editor directories and files
