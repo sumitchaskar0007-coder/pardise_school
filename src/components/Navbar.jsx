@@ -59,7 +59,7 @@ const Navbar = () => {
 
   const udanBooks = Array.from({ length: 9 }, (_, index) => ({
     label: `Udan ${index + 1}`,
-    path: `/books/Udan${index + 1}.pdf`,
+    path: `${import.meta.env.BASE_URL}books/Udan${index + 1}.pdf`,
   }));
 
   const navLinks = [
@@ -89,7 +89,7 @@ const Navbar = () => {
         {/* LEFT - LOGO */}
         <Link to="/" className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
           <img
-            src="/images/logo1.png"
+            src={`${import.meta.env.BASE_URL}images/logo1.png`}
             alt="Paradise School Logo"
             className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain"
           />

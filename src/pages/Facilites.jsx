@@ -7,63 +7,63 @@ const FacilitiesPage = () => {
             title: "Smart Classrooms",
             description:
                 "Digitally equipped classrooms with smart boards, projectors, and interactive learning tools for better understanding.",
-            image: "/facilities/Classroom_1.jpg",
+            image: `${import.meta.env.BASE_URL}facilities/Classroom_1.jpg`,
             alt: "Smart digital classroom with projector and students",
         },
         {
             title: "Science Laboratories",
             description:
                 "Well-maintained Physics, Chemistry, and Biology labs designed for practical experiments and scientific learning.",
-            image: "/facilities/laboratory_lab.jpg",
+            image: `${import.meta.env.BASE_URL}facilities/laboratory_lab.jpg`,
             alt: "Students performing experiments in modern science laboratory",
         },
         {
             title: "Computer Lab",
             description:
                 "Advanced computer lab with high-speed internet and updated software to enhance digital skills.",
-            image: "/facilities/computer_lab.jpg",
+            image: `${import.meta.env.BASE_URL}facilities/computer_lab.jpg`,
             alt: "Computer lab with multiple desktops and students working",
         },
         {
             title: "Library",
             description:
                 "A peaceful library with academic books, reference materials, and digital study resources for all classes.",
-            image: "/facilities/Library.jpg",
+            image: `${import.meta.env.BASE_URL}facilities/Library.jpg`,
             alt: "School library with bookshelves and reading space",
         },
         {
             title: "Sports & Playground",
             description:
                 "Large playground for football, cricket, athletics, yoga, and other physical activities promoting overall growth.",
-            image: "/facilities/sport.JPG",
+            image: `${import.meta.env.BASE_URL}facilities/sport.JPG`,
             alt: "Students playing sports on large school playground",
         },
         {
             title: "Transportation",
             description:
                 "Safe and reliable bus service with GPS tracking system and trained staff ensuring comfortable travel.",
-            image: "/facilities/bus.jpeg",
+            image: `${import.meta.env.BASE_URL}facilities/bus.jpeg`,
             alt: "School bus transportation facility",
         },
         {
             title: "CCTV Surveillance",
             description:
                 "24/7 CCTV monitoring ensuring complete safety and security for every student on the school campus.",
-            image: "/facilities/cctv.png",
+            image: `${import.meta.env.BASE_URL}facilities/cctv.png`,
             alt: "CCTV cameras installed for school security",
         },
         {
             title: "Clean Drinking Water",
             description:
                 "RO + UV purified drinking water facility available throughout the school for safe hydration.",
-            image: "/facilities/drinking_water.jpeg",
+            image: `${import.meta.env.BASE_URL}facilities/drinking_water.jpeg`,
             alt: "Clean RO water facility in school",
         },
         {
             title: "Medical Room",
             description:
                 "Dedicated medical room with first-aid support supervised by trained staff for emergencies.",
-            image: "/facilities/wellness.jpg",
+            image: `${import.meta.env.BASE_URL}facilities/wellness.jpg`,
             alt: "School medical room with first aid kits",
         },
     ];

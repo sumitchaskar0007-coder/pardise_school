@@ -14,7 +14,7 @@ const Curriculum = () => {
         "Social & emotional growth",
         "Creative activities"
       ],
-      img: "/curiculum/kids27.jpg"
+      img: `${import.meta.env.BASE_URL}curiculum/kids27.jpg`
     },
     {
       name: "Primary School",
@@ -27,7 +27,7 @@ const Curriculum = () => {
         "Critical thinking",
         "Moral values & discipline"
       ],
-      img: "/curiculum/2327605.jpg"
+      img: `${import.meta.env.BASE_URL}curiculum/2327605.jpg`
     },
     {
       name: "Secondary & Junior College",
@@ -40,7 +40,7 @@ const Curriculum = () => {
         "Career guidance",
         "Personality development"
       ],
-      img: "/curiculum/appdeveloper_3.jpg"
+      img: `${import.meta.env.BASE_URL}curiculum/appdeveloper_3.jpg`
     }
   ];
 

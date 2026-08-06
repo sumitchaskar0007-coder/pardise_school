@@ -85,7 +85,7 @@ const Admissions = () => {
               className="inline-block"
             >
               <a
-                href="/public/pdf/admission_form.pdf"
+                href={`${import.meta.env.BASE_URL}pdf/admission_form.pdf`}
                 download
                 className="bg-blue-700 text-white px-5 py-3 sm:px-6 sm:py-3.5 lg:px-8 lg:py-4 rounded-lg text-sm sm:text-base lg:text-lg font-semibold hover:bg-blue-800 transition duration-300 inline-flex items-center gap-2 sm:gap-3"
               >

@@ -7,17 +7,17 @@ const Footer = () => {
     {
       name: "Facebook",
       href: "https://www.facebook.com/paradiseenglishmediumschoolpune/?rdid=alSUBGpLn8aqh8GN",
-      icon: "/icons/fb.png",
+      icon: `${import.meta.env.BASE_URL}icons/fb.png`,
     },
     {
       name: "Instagram",
       href: "https://www.instagram.com/jadhavar_paradise_school",
-      icon: "/icons/insta.png",
+      icon: `${import.meta.env.BASE_URL}icons/insta.png`,
     },
     {
       name: "YouTube",
       href: "https://www.youtube.com/@jadhavargroupofinstitutespune",
-      icon: "/icons/youtube.png",
+      icon: `${import.meta.env.BASE_URL}icons/youtube.png`,
     },
   ];
 
@@ -32,7 +32,7 @@ const Footer = () => {
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 mb-4">
               <div className="w-24 h-16 bg-white overflow-hidden rounded">
                 <img
-                  src="/images/logo1.png"
+                  src={`${import.meta.env.BASE_URL}images/logo1.png`}
                   alt="Paradise English Medium School Logo"
                   className="w-full h-full object-contain p-1"
                 />

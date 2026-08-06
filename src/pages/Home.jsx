@@ -37,7 +37,7 @@ const Home = () => {
 
             {/* IMAGE ONLY */}
             <img
-              src="/images/hero111.png"
+              src={`${import.meta.env.BASE_URL}images/hero111.png`}
               alt="Paradise English Medium School Campus"
               className="
                 w-full

@@ -152,7 +152,7 @@ const About = () => {
               <div className="flex flex-col items-center">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary shadow-lg mb-4">
                   <img
-                    src="/images/owner.png"
+                    src={`${import.meta.env.BASE_URL}images/owner.png`}
                     alt="Founder - Paradise English Medium School"
                     className="w-full h-full object-cover"
                     onError={(e) => { 
@@ -192,7 +192,7 @@ const About = () => {
               <div className="flex flex-col items-center">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary shadow-lg mb-4">
                   <img
-                    src="/images/Shardul_jadhavar.jpeg"
+                    src={`${import.meta.env.BASE_URL}images/Shardul_jadhavar.jpeg`}
                     alt="Principal - Paradise English Medium School"
                     className="w-full h-full object-cover"
                     onError={(e) => { 
