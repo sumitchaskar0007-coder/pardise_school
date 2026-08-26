@@ -8,7 +8,8 @@ import AnnouncementAdmin from './pages/admin/AnnouncementAdmin';
 import CareerAdmin from './pages/admin/CareerAdmin';
 import GalleryAdmin from './pages/admin/GalleryAdmin';
 import BlogAdmin from './pages/admin/BlogAdmin';
-import Blog from './pages/Blog';
+import VideoAdmin from './pages/admin/VideoAdmin';
+
 // Public Pages
 import Home from './pages/Home'
 import About from './pages/About'
@@ -23,10 +24,14 @@ import Announcements from './pages/Announcements'
 import Career from './pages/Career'
 import InfoCenter from './pages/InfoCenter'
 import Contact from './pages/Contact'
+import Blog from './pages/Blog'
+import BlogDetails from './pages/BlogDetails'
+import Video from './pages/Video'
+import VideoDetails from './pages/VideoDetails'
+
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollToTop from "./components/ScrollToTop";
-import BlogDetails from './pages/BlogDetails';
 import LifeAtParadise from './pages/LifeAtParadise';
 import WhyParadise from './pages/WhyParadise';
 function App() {
@@ -54,43 +59,52 @@ function App() {
             <Route path="/info-center" element={<InfoCenter />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:id" element={<BlogDetails />} />
+            <Route path="/blog/:slug" element={<BlogDetails />} />
+            <Route path="/videos" element={<Video />} />
+            <Route path="/videos/:slug" element={<VideoDetails />} />
 
             {/* Admin Auth Route */}
             <Route path="/admin/login" element={<AdminLogin />} />
-            
+
             {/* Protected Admin Routes */}
             <Route path="/admin" element={<Navigate to="/admin/dashboard" replace />} />
-            
+
             <Route path="/admin/dashboard" element={
               <ProtectedRoutes>
                 <AdminDashboard />
               </ProtectedRoutes>
             } />
-            
+
             <Route path="/admin/gallery" element={
               <ProtectedRoutes>
                 <GalleryAdmin />
               </ProtectedRoutes>
             } />
-            <Route path="/admin/blog" element={
-              <ProtectedRoutes>
-                <BlogAdmin />
-              </ProtectedRoutes>
-            } />
-            
+
             <Route path="/admin/announcements" element={
               <ProtectedRoutes>
                 <AnnouncementAdmin />
               </ProtectedRoutes>
             } />
-            
+
             <Route path="/admin/careers" element={
               <ProtectedRoutes>
                 <CareerAdmin />
               </ProtectedRoutes>
             } />
-            
+
+            <Route path="/admin/blogs" element={
+              <ProtectedRoutes>
+                <BlogAdmin />
+              </ProtectedRoutes>
+            } />
+
+            <Route path="/admin/videos" element={
+              <ProtectedRoutes>
+                <VideoAdmin />
+              </ProtectedRoutes>
+            } />
+
             {/* Catch all route - redirect to home */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

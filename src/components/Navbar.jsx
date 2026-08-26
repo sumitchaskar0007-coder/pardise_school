@@ -59,7 +59,7 @@ const Navbar = () => {
 
   const udanBooks = Array.from({ length: 9 }, (_, index) => ({
     label: `Udan ${index + 1}`,
-    path: `${import.meta.env.BASE_URL}books/Udan${index + 1}.pdf`,
+    path: `/books/Udan${index + 1}.pdf`,
   }));
 
   const navLinks = [
@@ -70,8 +70,9 @@ const Navbar = () => {
     { label: "Admissions", path: "/admissions" },
     { label: "Life at Paradise", path: "/life-at-paradise" },
     { label: "Gallery", path: "/gallery" },
-    { label: "Blogs", path: "/blog" },
     { label: "Announcements", path: "/announcements" },
+    { label: "Blog", path: "/blog" },
+    {label: "Videos",path:"/videos"},
     { label: "Careers", path: "/career" },
     { label: "Contact", path: "/contact" },
   ];
@@ -89,9 +90,13 @@ const Navbar = () => {
         {/* LEFT - LOGO */}
         <Link to="/" className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
           <img
-            src={`${import.meta.env.BASE_URL}images/logo1.png`}
+            src="/images/logo1.png"
             alt="Paradise School Logo"
             className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain"
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = "/images/logo-placeholder.png";
+            }}
           />
         </Link>
 
@@ -257,7 +262,7 @@ const Navbar = () => {
       </AnimatePresence>
 
       {/* ================= STYLES ================= */}
-      <style jsx>{`
+      <style>{`
         .ticker-wrapper {
           width: 100%;
           overflow: hidden;
