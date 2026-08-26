@@ -46,7 +46,7 @@ const Video = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen pt-8 md:pt-12 lg:pt-16">
       {/* Header */}
       <div className="border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-5 py-10 sm:py-14 text-center">

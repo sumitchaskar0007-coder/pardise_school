@@ -33,7 +33,7 @@ const Blog = () => {
     });
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen pt-8 md:pt-12 lg:pt-16">
       {/* Header */}
       <div className="border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-5 py-14 text-center">
